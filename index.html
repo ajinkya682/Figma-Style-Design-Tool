@@ -3,33 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma Style Design Tool By Ajinkya</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body>
+
     <main>
         <div class="left">
-            <div class="profile">
-                <div>
-                    <div class="logo"></div>
-                    <p>ajinkyasaivar</p>
-                    
+            <div class="assets-icons">
+                <div class="icon figma">
+                    <i class="ri-figma-line"></i>
+                </div>
+                <div class="icon file">
+                    <i class="ri-file-3-line"></i>
+                    <p>File</p>
+                </div>
+                <div class="icon Assets">
+                    <i class="ri-add-circle-line"></i>
+                    <p>Assets</p>
+                </div>
+                <div class="icon find">
+                    <i class="ri-search-line"></i>
+                    <p>Find</p>
+                </div>
+                <div class="icon Variables">
+                    <i class="ri-settings-line"></i>
+                    <p>Variables</p>
+                </div>
+            </div>
+
+            <div class="untitle-column">
+                <div class="up">
+                    <div class="title">
+                        <h2>Untitled <i class="ri-arrow-drop-down-line"></i></h2>
+                        <i class="ri-layout-left-line"></i>
+                    </div>
+                    <p>Drafts <span>Free</span></p>
+                </div>
+
+                <div class="center">
+                    <div class="pages">
+                        <div class="page-title">
+                            <p>Pages</p>
+                            <i class="ri-add-large-fill"></i>
+                        </div>
+                        <div class="page">
+                            <p>Page 1</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="down">
+                    <div class="layers-title">
+                            <p>Layers</p>
+                        </div>
+                        <div class="layer">
+                            <p>Rectangle</p>
+                        </div>
                 </div>
             </div>
         </div>
 
-        <div class="right">
-
-            <div class="top-toolbar">
-                
-            </div>
-
-
-            <div class="content-area">
-
+        <div class="middle">
+            <div class="root">
+                <div class="rectangle"></div>
             </div>
         </div>
+
+        <div class="right">
+            <div class="header">
+                <div class="profile-area">
+                    <div class="profile">
+                        <div class="profile-image">A</div>
+                        <i class="ri-arrow-drop-down-line down-arrow"></i>
+                    </div>
+                    <div class="share">
+                        <i class="ri-play-large-line play"></i>
+                        <i class="ri-arrow-drop-down-line down-arrow"></i>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+                <div class="tabs-area">
+                    <div class="tabs">
+                        <div class="tab active">Design</div>
+                        <div class="tab">Prototype</div>
+                    </div>
+                    <div class="percent">
+                        <p>50%</p>
+                        <i class="ri-arrow-drop-down-line down-arrow"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section appearance">
+                <div class="title">Appearance</div>
+                <div class="property-row">
+                    <div class="color-preview">
+                        <div class="color-box" data-color="#D80909"></div>
+                        <p>D80909</p>
+                    </div>
+                    <div class="opacity-slider">
+                        <p>100</p>
+                        <span>%</span>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                </div>
+                <div class="add-btn">+</div>
+            </div>
+
+            <div class="section">
+                <div class="title">Corner radius</div>
+                <div class="property-row">
+                    <p>0</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">Opacity</div>
+                <div class="property-row">
+                    <p>100%</p>
+                </div>
+            </div>
+
+            <div class="section stroke-section">
+                <div class="title">Stroke</div>
+                <div class="stroke-header">
+                    <div class="color-preview">
+                        <div class="color-box empty"></div>
+                        <p>#000000</p>
+                    </div>
+                    <div class="add-btn">+</div>
+                </div>
+                <div class="property-row">
+                    <div class="position-section">
+                        <div class="position-item">
+                            <i class="ri-arrow-left-right-line"></i>
+                            <span>Inside</span>
+                            <i class="ri-arrow-drop-down-line"></i>
+                        </div>
+                        <div class="position-item">
+                            <i class="ri-arrow-down-line"></i>
+                            <span>W: 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section effects-section">
+                <div class="title">Effects</div>
+                <div class="effect-item">
+                    <span>Drop shadow</span>
+                    <i class="ri-eye-line"></i>
+                </div>
+                <div class="add-btn">+</div>
+            </div>
+
+            <div class="section export-section">
+                <div class="title">Export</div>
+                <div class="export-item">
+                    <span>1x</span>
+                    <div class="format-selector">
+                        <span>PNG</span>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+                <div class="export-item">
+                    <span>Export Rectangle 1</span>
+                </div>
+            </div>
+        </div>
+
     </main>
+    
 
     <script src="script.js"></script>
 </body>
