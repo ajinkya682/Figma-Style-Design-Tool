@@ -18,19 +18,19 @@
                 <div class="icon figma">
                     <i class="ri-figma-line"></i>
                 </div>
-                <div class="icon file">
+                <div class="icon file" onclick="notSoon()">
                     <i class="ri-file-3-line"></i>
                     <p>File</p>
                 </div>
-                <div class="icon Assets">
+                <div class="icon Assets"  onclick="notSoon()">
                     <i class="ri-add-circle-line"></i>
                     <p>Assets</p>
                 </div>
-                <div class="icon find">
+                <div class="icon find"  onclick="notSoon()">
                     <i class="ri-search-line"></i>
                     <p>Find</p>
                 </div>
-                <div class="icon Variables">
+                <div class="icon Variables"  onclick="notSoon()">
                     <i class="ri-settings-line"></i>
                     <p>Variables</p>
                 </div>
@@ -49,7 +49,7 @@
                     <div class="pages">
                         <div class="page-title">
                             <p>Pages</p>
-                            <i class="ri-add-large-fill"></i>
+                            <i class="ri-add-large-fill"  onclick="notSoon()"></i>
                         </div>
                         <div class="page">
                             <p>Page 1</p>
@@ -61,16 +61,24 @@
                     <div class="layers-title">
                             <p>Layers</p>
                         </div>
-                        <div class="layer">
-                            <p>Rectangle</p>
+                        <div class="layers" id="layer">
+                            <!-- <div class="layer">Rectangle</div> -->
                         </div>
                 </div>
             </div>
         </div>
 
         <div class="middle">
-            <div class="root">
-                <div class="rectangle"></div>
+            <div class="root" id="canvas">
+                <!-- <div class="rectangle"></div> -->
+            </div>
+            <div class="dock">
+                <div class="dock-item" id="create-rectangle">
+                    <i class="ri-checkbox-blank-line"></i>
+                </div>
+                <div class="dock-item" id="create-text">
+                    <i class="ri-text"></i>
+                </div>
             </div>
         </div>
 
@@ -103,81 +111,44 @@
                 <div class="title">Appearance</div>
                 <div class="property-row">
                     <div class="color-preview">
-                        <div class="color-box" data-color="#D80909"></div>
-                        <p>D80909</p>
-                    </div>
-                    <div class="opacity-slider">
-                        <p>100</p>
-                        <span>%</span>
-                        <i class="ri-arrow-down-s-line"></i>
+                        <div class="color-box" data-color="" id="fillPreview"></div>
+                        <input type="text" value="" id="fillColor">
                     </div>
                 </div>
-                <div class="add-btn">+</div>
+            </div>
+
+            <div class="section">
+                <div class="title">Width</div>
+                <div class="property-row">
+                    <input type="text" value="" id="widthInput">
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="title">Height</div>
+                <div class="property-row">
+                    <input type="text" value="" id="heightInput">
+                </div>
             </div>
 
             <div class="section">
                 <div class="title">Corner radius</div>
                 <div class="property-row">
-                    <p>0</p>
+                    <input type="text" value="" id="radiusInput">
                 </div>
             </div>
 
             <div class="section">
                 <div class="title">Opacity</div>
                 <div class="property-row">
-                    <p>100%</p>
+                    <input type="text" value="" id="opacityInput">
                 </div>
             </div>
 
-            <div class="section stroke-section">
-                <div class="title">Stroke</div>
-                <div class="stroke-header">
-                    <div class="color-preview">
-                        <div class="color-box empty"></div>
-                        <p>#000000</p>
-                    </div>
-                    <div class="add-btn">+</div>
-                </div>
-                <div class="property-row">
-                    <div class="position-section">
-                        <div class="position-item">
-                            <i class="ri-arrow-left-right-line"></i>
-                            <span>Inside</span>
-                            <i class="ri-arrow-drop-down-line"></i>
-                        </div>
-                        <div class="position-item">
-                            <i class="ri-arrow-down-line"></i>
-                            <span>W: 1</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="section effects-section">
-                <div class="title">Effects</div>
-                <div class="effect-item">
-                    <span>Drop shadow</span>
-                    <i class="ri-eye-line"></i>
-                </div>
-                <div class="add-btn">+</div>
-            </div>
-
-            <div class="section export-section">
-                <div class="title">Export</div>
-                <div class="export-item">
-                    <span>1x</span>
-                    <div class="format-selector">
-                        <span>PNG</span>
-                        <i class="ri-arrow-right-s-line"></i>
-                    </div>
-                </div>
-                <div class="export-item">
-                    <span>Export Rectangle 1</span>
-                </div>
-            </div>
         </div>
-
     </main>
+
     
 
     <script src="script.js"></script>
